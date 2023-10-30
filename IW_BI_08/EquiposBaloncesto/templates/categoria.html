@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Be right back.</title>
+    </head>
+    <body>
+        <h1>{{cat.nombreCategoria}}</h1>
+        {%block content%}
+        {%for equipo in cat.equipos.all%}
+        <p>{{equipo.nombreEquipo}} - {{equipo.ciudad}}</p> 
+        {%endfor%}
+        {%endblock%}
+    </body>
+</html>
